@@ -30,8 +30,8 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "rimraf": "rimraf",
     "prepare": "npm run build",
-    "prepublishOnly": "echo todo",
-    "preversion": "echo todo",
+    "prepublishOnly": "npm run build",
+    "preversion": "npm test",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
